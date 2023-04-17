@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 const TEST_DOCKER_NEXTJS = process.env.TEST_DOCKER_NEXTJS || 'Default value'
+const NEXT_PUBLIC_APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
 export default function Home(props) {
   return (
     <>
@@ -17,6 +18,8 @@ export default function Home(props) {
       <main className={styles.main}>
         <div className={styles.description}>
 	<h1>{props?.TEST_DOCKER_NEXTJS_SERVER}</h1>
+	<h1>{props?.NEXT_PUBLIC_APP_URL}</h1>
+
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>
