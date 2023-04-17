@@ -15,7 +15,6 @@ jobs:
       
     - name: Build and push
       run: | 
-        echo ${{ secrets.SSH_KEY }}
         echo ${{ secrets.TEST }}
 #       uses: docker/build-push-action@v4
 #       with:
