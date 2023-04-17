@@ -8,3 +8,4 @@ RUN mkdir -m 700 /root/.ssh; \
   ssh-keyscan github.com > /root/.ssh/known_hosts
 WORKDIR /app
 RUN --mount=type=ssh,id=github git clone git@github.com:luansmartr/smartr-env.git
+CMD ["ls", "smartr-env"]
