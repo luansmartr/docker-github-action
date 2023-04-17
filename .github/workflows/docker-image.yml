@@ -18,8 +18,7 @@ jobs:
       with:
         load: true
         tags: test-repo-clone:latest
-        secrets: |
-            github=${{ secrets.SSH_KEY }}
+        secrets: "github=${{ secrets.SSH_KEY }}"
     - name: Test
       run: |
           docker run --rm test-repo-clone:latest
