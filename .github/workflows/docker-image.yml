@@ -15,7 +15,7 @@ jobs:
     - name: SSH
       uses: webfactory/ssh-agent@v0.7.0
       with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh-private-key: ${{ secrets.SSH_KEY }}
     - name: Clone
       run: git clone git@github.com:luansmartr/smartr-env.git
     - name: Test
